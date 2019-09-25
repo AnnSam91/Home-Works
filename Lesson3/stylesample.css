@@ -1,0 +1,53 @@
+/*
+
+@import url('style.css')
+
+*/
+
+
+h1 {
+    color: red;
+}
+
+.box {
+    color: blue; 
+}
+
+span.box {
+    color: purple;
+}
+.right {
+    display: block;
+    text-align: right;
+}
+
+.box, .right, h1, span {
+
+}
+
+#green {
+    background: green;
+}
+
+[privet='ok'] {
+    color: hotpink;
+}
+/* Не использовать
+* {
+    color: salmon;
+}
+*/
+.someBg {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    background-image: url('fb.png');
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-x;
+    background-repeat: repeat-y;*/
+
+    background-position: 100px 100px;
+
+}
+

@@ -1,0 +1,82 @@
+.bg {
+    background: green url('photo.jpg') no-repeat 100px 200px; 
+
+    height: 300px;
+    width: 300px;
+
+    background-position: 50% 50%;
+    background-position: center center;
+
+    background-size: contain;
+    background-size: cover;
+
+    /* Жирность шрифта*/
+
+    font-weight: bold; /*thin light medium bold black*/
+    font-weight: 300; /*100-900*/
+
+    /*Размер шрифта*/
+
+    font-size: 40px;
+
+    /*Стиль шрифта*/
+
+    font-style: italic;
+
+    color: #09de09;  /*0 128 0 (r-красный g-зеленый b-голубой)*/
+
+    /*255=ff*/
+
+    color: rgb(0,128,0);
+
+    color: rgb(0,128,0,0.5);
+
+    color: hsla(100,120%,25%,.5);
+
+}
+
+.parent{
+    font-size: 30px; /*у браузера по умолчанию 16 px*/
+    padding-bottom: 20px;
+}
+
+.children{
+    font-size: 2em; /*60px*/
+    padding-bottom: inherit;
+
+}
+
+.children-children{
+    font-size: 1.5em; /*90px*/
+
+    font-size: 2rem; /*32px*/
+}
+
+.screen{
+    height: 100vh;
+    width: 80vw;
+    background: blue;
+
+    font-size: 20px!important; /*!important лучше не использовать*/
+
+    color: red;
+}
+
+
+ div{
+
+ }
+
+ div.screen{
+    color: white;
+ }
+
+ div.screen#good{
+
+ }
+
+ /*
+ вес тега - 1
+ вес класса - 10
+ вес id - 100
+ */

@@ -1,0 +1,72 @@
+.bg{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: gainsboro;
+    background: url('aut.jpg') no-repeat;
+    background-size: contain;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.calendar{
+    margin: auto;
+    width: 600px;
+    background-color: azure;
+}
+
+.month{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: orange;
+    color: green;
+    padding: 40px 30px;
+}
+
+.weekends{
+    display: flex;
+    background-color: rgb(243, 177, 54);
+    color: green;
+    padding: 7px 0;
+}
+
+.weekends div{
+    width: 14.28%;
+    text-align: center;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.days div{
+    width: 14.28%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.today{
+    background-color: rgb(4, 97, 4);
+    color: bisque;
+}
+
+.dayold{
+    color: gray
+}
+
+.newday{
+    color: grey;
+}
+
+.dayout{
+    color: firebrick;
+}
