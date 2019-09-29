@@ -1,0 +1,38 @@
+.clearfix{
+    clear: both;
+}
+
+.menu-horizontal{
+    width: 1030px;
+    }
+
+.head{
+    background: pink;
+}
+
+.headers{
+    float: left;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    border-style: ridge;
+    border-color: aqua;
+   }
+
+   .sidebar{
+       background: rgb(145, 245, 145);
+       width: 150px;
+   }
+
+   .point{
+       text-align: left;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       padding: 5px 0;
+       border-style: ridge;
+       border-color: rgb(231, 150, 231);
+   }
+
+

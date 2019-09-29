@@ -1,0 +1,176 @@
+.picture{
+    background: url(./img/sea.png) no-repeat;
+    width: 960px;
+    height: 639px;
+    
+    position: relative;
+}
+
+.cloud{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 20%;
+ }
+
+ .cloud1{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 10%;
+    right: 0;
+ }
+
+.palm1{
+    position: absolute;
+    width: 400px;
+    height: 630px;
+    top: 10px;
+    z-index: 4;
+}
+
+.turtle{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    bottom: 30px;
+    left: 23%;
+    z-index: 1
+}
+
+.ball{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 28%;
+    left: 30%;
+}
+
+.boat{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    right: 10%;
+    top: 30%;
+}
+
+.umbrella1{
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    top: 35%;
+    left: 35%;
+    z-index: 3;
+}
+
+.table{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    top: 70%;
+    left: 45%;
+    z-index: 3;
+}
+
+.hammock{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 40%;
+    z-index: 2;
+
+}
+
+.cocktail1{
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 63%;
+    left: 50%;
+    z-index: 4;
+}
+
+.stone1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 35px;
+    left: 10px;
+}
+
+.stone2{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    bottom: 30%;
+    right: 0;
+    z-index: 1;
+}
+
+.gull1{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 35px;
+    right: 10px;
+}
+
+.gull2{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 60px;
+    right: 200px;
+}
+
+.coconat{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48%;
+    top: 68%;
+    z-index: 5;
+}
+
+.shell1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 35px;
+    right: 10px;
+}
+
+.shell2{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    bottom: 25px;
+    right: 40px;
+    z-index: 1;
+}
+
+.shell3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom:50px;
+    right: 40px;  
+}
+
+.grass1{
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    bottom: 0;
+    right: 10%;
+}
+
+.grass2{
+    position: absolute;
+    width: 320px;
+    height: 250px;
+    bottom: 15%;
+    right: 0;
+    z-index: 3;
+}

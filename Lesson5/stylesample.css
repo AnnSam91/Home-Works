@@ -1,0 +1,80 @@
+.box{
+    width: 50%;
+    background: red;
+}
+
+.panel{
+    width: calc(50% + 30px);
+    background: blue;
+}
+
+.position{
+    background: red;
+    width: 600px;
+    height: 600px;
+
+    position: relative;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    background: purple;
+    border-radius: 50%;
+
+    position: relative;
+    /*Смещение происходит относительно его текущего местоположения*/
+    top: 40px;
+    left: 50px;
+
+    /*right
+    bottom*/
+}
+
+.point.dark{
+    background: black;
+    position: static;
+
+    position: absolute;
+    /*Абсолютное позиционирование наследованное от родителя, отличное от static*/
+    top: 100px;
+    left: 200px;
+
+    /*
+    Он смещаеться при абсолютном позиционировании элемент смещаеться относительно родителя, 
+    у которого задан position отличный от static либо относительно области видимости.
+
+    Так же элемент теряет свою ширину, если она не была задана принудительно.
+    Также теряет свое место.
+    */
+
+    z-index: 1;
+}
+
+.absolute-box{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    color: white;
+
+    /*position: initial;*/
+    /*initial - Применяет свойству значение по умолчанию*/
+}
+
+.fixed-box{
+    font-size: 40px;
+    font-weight: 700;
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    /*
+    При позиционировании fixed элемент позиционируеться относительно области видимости.
+    Теряет свою ширину, если она не была задана.
+    Теряет свое место.
+
+    top, left, right, bottom - поддерживают px % em auto
+    */
+}

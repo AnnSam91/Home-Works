@@ -1,0 +1,31 @@
+.clearfix{
+    clear: both;
+}
+
+.calendar{
+    width: 700px;
+}
+
+.calendar-title{
+    background: red;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.calendar-week-item{
+    float: left;
+    width: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.calendar-days{
+    background: grey;
+}
+
+.calendar-days .day{
+    float: left;
+    width: 100px;
+    text-align: center;
+    padding: 15px 0;
+}
