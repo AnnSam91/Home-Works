@@ -1,0 +1,44 @@
+.list{
+    list-style-type: none;
+
+    list-style-position: inside;
+}
+
+.list-item{
+    list-style-type: square;
+}
+
+.list .list-item{
+    list-style-type: upper-roman;
+}
+
+.list-item2{
+    list-style-image: 
+    linear-gradient(red 0, red 50%, blue 50%);
+}
+
+/*
+list-style: [square либо url('')] inside;
+*/
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    
+}
+
+.menu-item{
+    float: left;
+    padding: 10px 20px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.clear{
+    clear: both;
+}
