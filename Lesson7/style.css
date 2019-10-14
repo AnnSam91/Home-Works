@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'pt_sans_narrowregular';
+    src: url('./fonts/ptsansnarrow-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color: darkcyan;
+}
+
+a:hover{
+    color: darkmagenta;
+}
+
+a:active{
+    color: yellow;
+}
+
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    background: rgb(126, 243, 126);
+    position: relative;
+    padding-top: 5px;
+}
+
+.head{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.logoheader{
+    position: static;
+    width: 100px;
+    height: 100px;
+    padding-left: 10%;
+    float: left;
+}
+
+.menu{
+    list-style-type: none;
+    text-align: center;  
+}
+
+.menu-item{
+    float: left;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.main-content{
+    background: rgb(126, 243, 126);
+    min-height: 400px;
+    width: 80%;
+    float: left;
+}
+
+.sidebar{
+    background: rgb(240, 221, 140);
+    min-height: 400px;
+    width: 20%;
+    float: left;
+}
+
+.sidebar-menu{
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.article-title{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.list{
+    text-align: center;
+    position: relative;
+}
+
+li .listitem{
+    list-style-position: inside;
+    text-align: left;
+    float: left;
+}
+
+.imgkids{
+    float: right;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+}
+
+#footer{
+    background: rgb(219, 176, 243);
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 45px;
+    float: left;
+    
+}
+
+.logofoot{
+    position: static;
+    width: 70px;
+    height: 70px;
+    top: 5%;
+    float: right;
+    padding-right: 5%;
+}

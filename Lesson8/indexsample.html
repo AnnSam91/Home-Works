@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stylesample.css">
+
+</head>
+<body>
+
+    <!--Аудио-->
+    <audio src="11.mp3" controls></audio>
+
+    <!--
+        controls - включает управление аудио
+    -->
+
+    <audio controls muted preload="none">
+        <source src="11.mp3" type="audio/mpeg">
+        <source src="11.ogg" type="audio/ogg">
+    </audio>
+
+    <!--
+        autoplay - автовоспроизведение
+        loop - воспроизведение по кругу
+        muted - отключает звук при загрузке страницы
+
+        preload=""
+            auto (по умолчанию)- при загрузке браузера аудио загрузится сразу 
+            metadata - при загрузке подгрузится только первые несколько байт аудио записи 
+            с информацией  о ней
+            none - при загрузке аудио файл не загрузится
+    -->
+
+    <!--Видео-->
+
+    <video src="22.mp4" controls></video>
+
+    <video controls width="300" height="300" autoplay muted>
+        <source src="22.mp4" type="video/mp4">
+        <source src="33.webm" type="video/webm">
+        <source src="44.ogv" type="video/ogg">
+    </video>
+
+    <!--
+        autoplay
+        loop
+        muted
+        poster="" - можно передать картинку, которая будет выводиться до запуска видео
+        preload=""
+    -->
+
+    <div class="text">
+        Текст
+    </div>
+
+    <div class="text2">
+        Текст 2
+    </div>
+
+    <div class="box">
+        <b>Текст 5</b>
+        <p>Текст</p>
+        <p>Текст 2</p>
+        <span><b>Текст</b></span>
+        <h2>Заголовок</h2>
+        <p>Текст 3</p>
+    </div>
+        
+
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    
+</body>
+</html>

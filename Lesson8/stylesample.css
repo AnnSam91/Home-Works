@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: 'forwardadregular';
+    src: url('fonts/18018-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.text2{
+    font-family: 'forwardadregular';
+    font-size: 100px;
+}
+
+/*Дочерний селектор > */
+
+.box > b{
+    color: red;
+}
+
+/*Сестринские селекторы + ~ */
+
+b + p{
+    color: blue;
+}
+
+b ~ p{
+    text-decoration: underline;
+}
+
+/*Псевдоселекторы*/
+
+.list li:nth-child(odd){
+    /*
+    odd - нечетные
+    even - четные
+    */
+
+    color: purple;
+}
+
+.list li:nth-child(3n){ /*Каждый третий выделит*/
+    text-decoration: underline;
+}
+
+.list li:nth-child(3n+2){
+    font-weight: bold;
+}
+
+/*
+    nth-child(3) - выделиться 3/й элемент
+    nth-child(n + 2) - выберет все, начиная со второго
+
+    :nth-last-child - работает так же как nth-child только с конца
+
+    :first-child - выделит 1 элемент в ряду
+    :last-child - выделит последний элемент
+
+    :nth-of-type() - работает также как nth-child, только выделяет элементы строго по типу
+
+*/
+
+.box p:nth-of-type(even){
+    font-size: 20px;
+}
+
+
+
+
