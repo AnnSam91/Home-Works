@@ -1,0 +1,126 @@
+.products{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.products tbody td{
+    padding: 10px;
+}
+
+.table-wrapper{
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+.border{
+    height: 200px;
+    border: 3px solid blue;
+
+    border-style: dotted;
+    /*
+        dotted - точки
+        dashed - полоски прерывающиеся
+        solid - сплошная заливка
+        double - двойная линия
+        groove - заливка с тенью или теснением
+    */
+
+    border-style: dotted dashed solid double;
+    border-color: red;
+    border-color: red blue purple salmon;
+    border-width: 5px 10px 20px 30px;
+
+    border-right: 10px solid black;
+    /*
+        border-left
+        border-bottom
+        border-top
+    */
+
+    border-bottom: 0;
+
+    border-radius: 15px;
+    border-radius: 10px 20px 30px 40px;
+
+    /*с левого верхнего угла, по часовой стрелке*/
+
+    border-radius: 50%;
+
+    -webkit-box-shadow: 7px 7px 6px 0px rgba(209, 108, 50, 1);
+    -moz-box-shadow:    7px 7px 6px 0px rgba(209, 108, 50, 1);
+    box-shadow:         7px 7px 6px 0px rgba(209, 108, 50, 1);
+
+    /*
+        смещение_по_ширине смещение_по_высоте радиус_размытия растяжение цвет
+
+        Есть вариант записи сразу двух теней, но одна из них долна быть inset
+         box-shadow: inset 7px 7px 6px 0px rgba(209, 108, 50, 1),
+         7px 7px 6px 0px rgba(209, 108, 50, 1);
+    */
+}
+
+.border2{
+    height: 200px;
+    width: 300px; /*Приоритет 1*/
+
+    max-width: 200px; /*Приоритет 2*/
+    min-width: 400px; /*Приоритет 3*/
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 5px solid; /*по-умолчанию черный цвет*/
+
+    border-radius: 20px/40px;
+    /*
+        border-top-left-radius - угол верхний левый
+    */
+
+    text-shadow: 4px 4px 0px rgba(255, 150, 150, 1);
+}
+
+.width-height{
+    background: red;
+
+    min-height: 100px;
+    max-height: 200px;
+
+    max-width: 700px;
+    min-width: 400px;
+
+    /*overflow: hidden;*/
+}
+
+/*Псевдоэлементы*/
+
+.width-height::first-letter{
+    /*Выбирете каждую 1 букву каждого абзаца, применяется только к блочным элементам*/
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.width-height::first-line{
+    text-decoration: underline; 
+
+    /*
+        Выделит первую строку текста, и применяется только к блочным элементам
+    */
+}
+
+.width-height::before{
+    content: 'ПРИВЕТ'; /*свойство content является обязательным, без него работать не будет*/
+}
+
+.width-height::after{
+    content: 'ПОКА'; /*свойство content является обязательным, без него работать не будет*/
+}
+
+/*
+    псевдоэлемент before добавит контент в начале элемента до всего что внутри, а after после всего
+*/
+
+/*
+    color: transparent; прозрачный цвет
+*/
