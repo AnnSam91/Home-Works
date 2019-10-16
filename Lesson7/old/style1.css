@@ -1,0 +1,54 @@
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color: darkcyan;
+}
+
+a:hover{
+    color: darkmagenta;
+}
+
+a:active{
+    color: yellow;
+}
+
+.header-logo{
+    width: 150px;
+    height: 100px;
+    float: left;
+
+    padding-left: 10%;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    color: #7b961b;
+}
+
+.header-menu .menu{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+
+.panel{
+    list-style-type: none;
+    text-decoration: none;
+}
