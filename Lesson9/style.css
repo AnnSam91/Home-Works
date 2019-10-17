@@ -1,0 +1,29 @@
+.products{
+    border-collapse: collapse;
+    width: 850px;
+}
+
+.title{
+    caption-side: top;
+    font-weight: bold;
+}
+
+.products tbody tr:nth-child(1) td:nth-child(1){ /* тоже самое что :first-child */
+   /* border-right: 0;*/
+}
+
+.products tbody tr:nth-child(1) td:nth-child(2){
+    border-left: 0;
+}
+
+.products td{
+    padding: 15px;
+}
+
+/*
+vertical-align - выравнивание по вертикали текста работает в ячейке таблицы для выравнивая текста  
+к верху top
+ к низу bottom
+центрирует middle
+*/
+
