@@ -341,7 +341,7 @@ img{
 
 .footer-news-item{
     max-width: 220px;
-    margin-block-start: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-news-item-image{
@@ -362,7 +362,6 @@ img{
 
 .footer-news-item time{
     float: left;
-    font-weight: 700;
 }
 
 .footer-contacts{

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stylesample.css">
+
+</head>
+<body>
+
+    <!--Формы-->
+
+    <form method="post" action="form.php">
+        <fieldset disabled>
+            <legend>Загловок группы полей</legend>
+            <p>
+                <label for="name">
+                    Имя <em>*</em></label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label for="email">Почта</label>
+                <input type="email" id="email">
+                </p>
+        </fieldset>
+
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+    <!-- Атрибуты тега form
+        action - принимает ссылку на обработчик формы
+        action="form.php"
+        action="mailto:a.samoilenko.91@gmail.com"
+        Важно для второго варианты указать еще один атрибут 
+        enctype="text/plain"
+
+        autocomplete="on"
+        autocomplete="off" - позволяет браузеру или другой программе сохранять 
+        у себя в памяти введенные данные в форму
+
+        method="post" при этом методе данные в зашифрованном виде отправляються на сервер, 
+        например таким способом отправляються данные о входе пользователя
+
+        method="get" при этом методе введенные в форму отправляються из сформированной адрессной строки
+
+        name="произвольное_имя на английском язые только" что бы обращаться к форме на бекенде
+
+        novalidate - запрещает проверку полей формы
+
+        target="_blank"
+        _blank - результат обработки формы откроеться в новом окне
+
+
+        Атрибуты для тега fieldset
+
+        disabled - отключает элементы внутри себя и делает их неактивными
+        form - в него передается id нужной формы для того, что бы связать поля с ней
+        name - аналогично с form
+        -->
+
+        <form>
+            <input type="file" accept=".doc, .pdf, audio/*">
+            <!--
+                accept=".doc"
+                Разрешает только определенные виды файлов
+                Также можно указывать целые МIME типы
+                Например audio/*
+            -->
+
+            <input type="image" src="g.png" alt="google">
+            <!--
+                Этот тип выполняет при нажатии функцию отправки формы. Будет работать как кнопка отправки
+            -->
+            <input type="text" autofocus placeholder="Привет"><br>
+            <input type="text" required size="10"><br>
+            <input type="radio"><br>
+            <input type="checkbox" checked="checked"><br>
+            <input type="number" min="0"><br>
+            <input type="range"><br>
+            <input type="date" min="2018-09-10"><br>
+            <input type="datetime-local"><br>
+            <input type="month"><br>
+            <input type="time"><br>
+            <input type="week"><br>
+            <input type="search"><br>
+            <input type="tel" value="+380501234567"><br>
+            <input type="url"><br>
+            <input type="email" required><br>
+            <button>Кнопка</button>
+            <input type="color"><br>
+            <input type="hidden"><br>
+            <input type="password"><br>
+            <input type="reset"><br>
+            <input type="submit" value="Послать"><br>
+
+            <textarea>sdasdasds</textarea>
+
+        </form>        
+
+        <!--
+            Атрибуты для textarea
+            cols="10" количество колонок исходя из ширины символов
+            rows="10" количество строк 
+            maxlength="100" максимальное количество символов
+            wrap="hard" hard\soft
+            hard - при отправке сохранит все переносы в тексте (работает в связке с cols)
+            soft - не сохранит
+
+
+            Атрибуты для полей text\search\tel\url\email\password
+            saze="20" - задает видимую ширину поля в символах (лучше использовать css width)
+
+
+            Атрибуты для file \ email
+            multiple - позволяет выбрать в поле сразу несколько значений или файлов
+
+
+            Атрибуты для полей range\number\даты
+            min="0" - указвает минимальное значение
+            min="2018-09-10"
+
+            max="" - максимальное значение
+
+            step="10" - шаг добавления значения цифры
+
+
+            Атрибуты для поля img
+            height - высота
+            widht - ширина
+
+
+            Атрибуты для полей radio и checkbox
+            checked="checked"
+
+
+            Атрибуты для текстовых полей
+            autocomplete="on/off"
+            pattern="регулярное_выражение" - нужно для проверки поля на правильность ввода
+            placeholder="текст" - это текст который будет виден пользователю до ввода данных
+            readonly - запрещает менять значение поля, но позволяет скопировать или выделить текст
+
+
+            Атрибуты, которые поддерживают все поля формы
+            autofocus - позволяет установить фокус на указанном поле
+            disabled - отключает поле и делает не активным для пользователя
+            form="id_формы" - в него передаеться id формы, что бы связать это поле с ней
+            formnovalidate - указывает, что не нужно проверять поле и перекрывает значение 
+                             указанное для формы
+            
+            name="произвольное_имя" - является обязательным для полей, что бы к ним можно 
+                                      было обратиться из бекенда
+            required - делает поле обязательным к вводу значения
+
+            value="" (для каждого поля отдельное значение)
+            Для submit он поменяет текст на это значение
+            Для текстового поля - оно запишет переданное значение по-умолчанию
+        -->
+
+
+    <form>
+        <select multiple>
+            <option label="123">Значение 1 Значение 1 Значение 1 Значение 1 Значение 1</option>
+            <option selected>Значение 2</option>
+            <option value="10">Значение 3</option>
+            <option disabled>Значение 4</option>
+            <optgroup label="Количество">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </optgroup>
+        </select>
+
+    </form>
+
+    <!--
+        Атрибуты поддерживаемые select
+        autofocus
+        disabled
+        form
+        name
+        required
+        size="3" - количество пунктов видимых пользователю при раскрытии списка
+        multiple - позволяет выбрать несколько пунктов 
+
+        Атрибуты для option
+        disabled - опция перестанет быть активной, запрещает выбор этого пункта
+        label="краткое_название"
+        selected - делает пункт сразу выделенным
+        value="10" - если указан атрибут для пункта списка, 
+                     то при отправке формы будет отправлено не то, 
+                     что в пункте, а значение value
+        
+        
+        Атрибуты для optgroup
+        disabled - можно деактивировать сразу целую группу
+        label - задает заголовок группы
+
+    -->
+
+    <!--Надписи к полям формы-->
+
+    <form>
+        <label for="username">Имя</label>
+        <input type="text" id="username">
+
+        <label>Имя
+            <input type="text">
+        </label>
+
+        <label>Картошка<input type="checkbox"></label>
+        <label>Курочка<input type="checkbox"></label>
+        <label>Помидорчик<input type="checkbox"></label>
+
+        <label>Картошка<input type="radio" name="eat" value="1"></label>
+        <label>Курочка<input type="radio" name="eat" value="2"></label>
+        <label>Помидорчик<input type="radio" name="eat" value="3"></label>
+
+    </form>
+    
+    <!--
+        label for поддерживает input textarea select
+    -->
+
+</body>
+</html>
