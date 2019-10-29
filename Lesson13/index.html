@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form method="post" action="http://nickblack.pro/send.php" enctype="text/plain">
+        <fieldset>
+            <legend>Информация о пользователе</legend>
+            <p>
+                <input type="text" name="fname" required >
+                <label>Имя</label>  
+            </p>
+            <p>
+                <input type="text" name="sname" >
+                <label>Фамилия</label>
+            </p>
+            <p>
+                <input type="number" min="1" max="100" name="age">
+                <label>Возраст</label> 
+            </p>
+            <p>
+                <input type="email" name="mail">
+                <label>Почта</label>
+            </p>
+            <p>
+                <input type="date" min="1991-01-01" iname="bday">
+                <label>Дата рождения</label> 
+            </p>
+            <p>
+                <input type="tel" name="phone" required>
+                <label>Телефон</label>
+            </p>
+            <p>
+                <input type="email"  required value="a.samoilenko.91@gmail.com" size="21">
+                <label>Email</label>
+            </p>
+        </fieldset>
+
+        <p><input type="submit" value="Отослать"></p>
+
+    </form>
+    
+    
+</body>
+</html> 
