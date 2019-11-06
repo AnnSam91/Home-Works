@@ -18,7 +18,7 @@
         Есть параметры, которые отменяют флекс-элемент и выкидывает его из потока флекс-элемента
         position: absolute \ fixed
 
-        relative млжно!
+        relative мjжно!
     */
 
     flex-direction: row;
@@ -42,7 +42,7 @@
     flex-flow: row nowrap;
 
     /*
-    Позволяет назннначить сразу два параметра
+    Позволяет назначить сразу два параметра
     lex-flow: flex-direction flex-wrap
     */
 
