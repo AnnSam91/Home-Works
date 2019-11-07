@@ -166,6 +166,20 @@ body{
     flex-direction: column;
     width: 378px;
     height: 485px;
+    text-align: center;
+}
+
+.search-boxes-title{
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0;
+    padding: 77px 0 30px 0;
+}
+
+.search-boxes-desc{
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 43px;
 }
 
 .products{
