@@ -3,6 +3,7 @@
 
 body{
     background-color: #3e3b4a;
+    font-family: 'Open Sans', sans-serif;
 }
 .wrapper{
     max-width: 1020px;
@@ -12,16 +13,16 @@ body{
 .header-title{
     display: flex;
     justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
+    line-height: 0;
+    padding-top:71px;
 }
 
 .header-menu{
-    margin-top: 91px;
     text-decoration: none;
     color: #898691;
     text-transform: uppercase;
     padding-left: 32px;
-    padding-top: 5px;
+    padding-top: 10px;
     font-weight: bold;
     font-size: 12px;
 
@@ -29,7 +30,7 @@ body{
 }
 
 .header-text{
-    padding-top: 60px;
+    padding-bottom: 75px;
 }
 
 .header-logo{
@@ -37,22 +38,21 @@ body{
     font-size: 48px;
     color: #ffffff;
     font-weight: bold;
+    padding-bottom: 36px;
    
 }
 
 .header-design{
     font-size: 13px;
     color: #898691;
-    padding-bottom: 66px;
 }
 
 .header-search{
-    margin-top: 96px;
     text-decoration: none;
     color: #898691;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 32px;
     font-size: 12px;
     
@@ -66,8 +66,6 @@ body{
     height: 513px;
     flex-direction: column;
     padding-bottom: 19px;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 .main-slider-item{
@@ -96,7 +94,7 @@ body{
 .slider-desc{
     font-size: 36px;
     color: #ffffff;
-    padding-bottom: 75px;
+    padding-bottom: 71px;
 }
 
 .box-button{
@@ -127,10 +125,12 @@ body{
     width: 624px;
     height: 485px;
     font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box-item-acces{
-    padding-left: 40px;
+    padding: 0 0 0px 40px;
 }
 
 .category-2{
@@ -149,7 +149,7 @@ body{
 }
 
 .accessories-box-desc{
-    padding-bottom: 195px;
+    padding-bottom: 154px;
     font-size: 24px;
     color: #ffffff;
 }
@@ -161,7 +161,7 @@ body{
     color: #edecf0; 
 }
 
-.search-boxes-item{
+.search-boxes{
     background: #eb7b61;
     flex-direction: column;
     width: 378px;
@@ -169,17 +169,56 @@ body{
     text-align: center;
 }
 
+.search-boxes-item{
+    padding: 0 44px 0 51px;
+}
+
 .search-boxes-title{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
+    font-weight: 400;
+    margin: 0;
     color: #ffffff;
     margin: 0;
-    padding: 77px 0 30px 0;
+    padding-top: 77px;
 }
 
 .search-boxes-desc{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
     font-size: 24px;
     color: #ffffff;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
+}
+
+input{
+    border: 4px solid #ffd9d1;
+    background-color:  #eb7b61;
+    font-size: 20px;
+    color: #ffd9d1;
+    font-weight: bold;
+    max-width: 107px;
+    padding: 8px 88.5px 13px 84.5px;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.subscribe-button{
+    text-decoration: none;
+    max-width: 295px;
+    background-color: #66689c;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 13px 95px;
+    text-align: center;
+}
+
+.ps-text{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 30px;
 }
 
 .products{
@@ -188,7 +227,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 51px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .category{
@@ -197,15 +235,19 @@ body{
     text-transform: uppercase;
     color: #ffc7b0;
     text-align: center;
-    padding: 24px 0 125px 0;   
+    padding-bottom: 125px;   
 }
 
+.box-item-camera,
+.box-item-trobla{
+    padding: 35px 64px 39px 68px;
+}
 .category-cam{
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: #ffc7b0;
-    padding: 24px 0 20px 0; 
+    padding: 0 0 20px 0; 
 }
 
 .products-box-title{
@@ -219,7 +261,7 @@ body{
     max-width: 94px;
     background: #ffe18e;
     padding: 15px 13px;
-    align-items: center;
+    text-align: center;
 }
 
 .review-button{
@@ -252,7 +294,7 @@ body{
     
 }
 .box-item-categ{
-    padding-left: 42px;
+    padding: 35px 0 39px 42px;
 }
 
 .cameras-box-title{
@@ -266,7 +308,7 @@ body{
 .cameras-box-desc{
     font-size: 20px;
     color: #ffffff;
-    padding-bottom: 185px;
+    padding-bottom: 128px;
 }
 
 .read-button-3{
