@@ -1,0 +1,94 @@
+.table-border{
+    max-width: 1002px;
+    border-style:solid;
+    border-width: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.table-irag{
+    border-collapse: collapse;
+    width: 1000px;
+    margin-left: 1px;
+    margin-bottom: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.title{
+    caption-side: top;
+    font-weight: bold;
+    padding: 5px 0;   
+}
+
+.text-party{
+    font-weight: normal;
+    border-top-width: 2px;
+}
+
+.text-head{
+    font-weight: normal;
+    width: 100px;
+    border-bottom-width: 2px;
+}
+
+.text-total{
+    font-weight: normal;
+    width: 70px;
+    vertical-align: bottom;
+    border-bottom-width: 2px;
+}
+
+.iragWas{
+    vertical-align: top;
+    padding-left: 5px;
+    border-right-color: transparent;
+}
+
+.worth{
+    width: 140px;
+    padding-left: 10px;
+    vertical-align: top;
+    border-right-color: transparent;
+}
+
+.numbers{
+    vertical-align: top;
+    text-align: right;
+    padding-right: 10px;
+    border-bottom-color: transparent;
+}
+
+.percent{
+    vertical-align: top;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.count{
+    width: 170px;
+    height: 20px;
+    padding-bottom: 5px;
+    border-bottom-color: transparent;
+    border-right-width: 2px;
+}
+
+.within{
+    padding-bottom: 5px;
+    border-right-width: 2px;
+}
+
+.total-foot{
+    vertical-align: top;
+    padding-left: 5px;
+    border-right-color: transparent;
+}
+
+.empty{
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+
+
+

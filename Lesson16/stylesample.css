@@ -1,0 +1,205 @@
+.box{
+    width: 300px;
+    height: 100px;
+    background: red;
+
+    /*Переходы (transition)*/
+    
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(1,.99,.9,.88);
+    transition-delay: 2s;
+
+    /*
+        transition-property - принимает название свойства на которое влияет  переход, по умолчанию это 
+        all (все свойства)
+        none - отключает все свойства
+        имя_свойста - будет работать только для него
+
+        transition-duration - время выполения перехода
+        Задается в s \ ms
+
+        transition-timing-function - принимает функцию, которая отвечает за параметры ускорения перехода
+        По-умолчанию имеет параметр  - easy
+        Можно передать любую функцию cubic-bezier
+
+        transition-delay - задержка перед выполнением перехода
+        Задается в s \ ms
+
+        Краткая запись перехода
+        transition: property duration timing-function delay;
+
+        Переход сразу для нескольких параметров
+        transition: background 1s ease, color 4s linear;
+
+        transition-property: background, color;
+        transition-delay 1s, 4s;
+        transition-timing-function: ease, linear;
+    */
+
+}
+
+.box:hover{
+    width: 500px;
+}
+
+
+/*Трансформации (transform)*/
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+.box2:hover{
+    /*Сдвиг элемента*/
+    transform: translate(50px, 60px);
+
+    /*
+    translateX(50px) - для сдвига по оси Х
+    translateY(60px) - для сдвига по оси Y
+    */   
+    
+    /*Искажение*/
+    transform: skew(20deg, 20deg);
+    /*Искажает оси объекта
+    skewХ()
+    skewY()
+    */
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+
+.box3:hover{
+    /*Масштабирование*/
+    transform: scale(-1, -1);
+
+    /*
+    Принимает значение от 0 до 1 - уменьшение относительно 100%
+    Больше 1 - это увеличение
+    Отрицательное значение, то объет зеркально перевернется
+
+    scaleХ(1)
+    scaleY(1)
+    */ 
+}
+
+.box4{
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: transform 2s;
+
+    transform-origin: 70% 30%;
+
+    /*
+        Меняет координаты оси, принимает px \ % \ top, left, right, bottom
+    */
+}
+
+.box4:hover{
+    /*Поворот*/
+
+    transform: rotate(360deg);
+
+    /*Принимает градусы поворота - deg*/
+}
+
+.box5{
+    font-size: 60px;
+    font-weight: bold;
+    animation: shadow 5s infinite ease-in-out;
+    position: absolute;
+
+    animation: shadow 5s infinite ease-in-out;
+}
+
+.box5:hover{
+    animation-play-state: paused;
+}
+
+@keyframes shadow{
+    0%{
+        text-shadow: 0 0 3px black;
+        left: 0;
+    }
+
+    50%{
+        text-shadow: 0 0 30px black;
+        left: 300px;
+        transform: rotate(360deg);
+    }
+
+    100%{
+        text-shadow: 0 0 3px black;
+        left: 0;
+    }
+}
+
+/*
+    Задокументированые названия начала и оноца анимации
+    from - начало (0%)
+    to - конец (100%)
+
+    animation-name: произвольное_имя;
+    Принимает произвольное имя
+    Значение none отключает анимацию.
+
+    animation-duration - время выполнения анимации в s \ ms
+
+    animation-timing-function  - принимает функцию cubic-bezier
+
+    animation-iteratoin-count - количество итераций анимации. (Количсетво воиспроизведений анимации)
+    Если задать infinite то анимация будет бесконечной
+
+    animation-direction - направление анимации
+    normal (по умолчанию)
+    reverse - все повторы анимации воспроизводяться в обратном направлении
+    alternate - каждый нечетный повтор воспроизводится в нормальном направлении, а каждый четный в обратном
+    alternate-reverse - тоже самое, что alternate, только наоборот
+
+    animation-play-state - определяет будет ли анимация остановлена или запущена
+    По умолчанию значение running
+    paused - остановка анимации
+
+    animation-delay - задержка перед началом анимации в s \ ms
+
+    Кратка запись анимации
+    animation:name duration timing-function delay iteratoin-count direction;
+
+    Множественная анимация
+
+    Анимация можно передавать через запятую и они будут воспроизводиться одновременно
+*/
+
+@keyframes trash{
+    0%{
+        right: 0;
+    }
+
+    37.5%{
+        left: 400px;
+    }
+
+    62.5%{
+        left: 400px;
+        top: 0px;
+    }
+
+    87.5%{
+        left: 400px;
+        top: 200px;
+        transform: rotate(360deg);
+    }
+
+    100%{
+        left: 400px;
+        top: 200px;
+        transform: scale(2, 2);
+    }
+}
