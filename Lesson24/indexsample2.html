@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+</head>
+<body>
+
+    <a href="#someText" data-fancybox class="link">Нажми на меня</a>
+
+    <div id="someText" style="display: none;">
+        Привет. Я fancybox
+    </div>
+
+    <div class="text">Привет. Как дела?</div>
+
+   <div class="slider-wrap">
+    <div class="slider">
+        <div><img src="img/image1.jpg"></div>
+        <div><img src="img/image2.jpg"></div>
+        <div><img src="img/image3.jpg"></div>
+    </div>
+</div>
+
+<style>
+    body{
+        background: #333;
+    }
+    .slider-wrap{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .slider div img{
+        margin: 0 auto;
+    }
+</style>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+
+    <script>
+       $('.text').text('Пока. Я ушел.') 
+
+       $('.text').on('click', function(){
+           $(this).css('color', 'red');
+           $('.link').toggle('slow');
+       });
+        $(document).ready(function(){
+        $('.slider').slick()
+        });
+       /* $ = jQuery */
+    </script>
+</body>
+</html>
