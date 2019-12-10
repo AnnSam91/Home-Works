@@ -7,6 +7,7 @@
 *:after{
     box-sizing: border-box;
 }
+
 .wrapper{
     max-width: 1920px;
     margin: 0 auto;
@@ -544,4 +545,9 @@
     width: 471px;
     border: none;
     background-color: #ffffff;
+}
+
+#objects,
+#about{
+    transition-duration: 13s;
 }
