@@ -8,39 +8,37 @@
     box-sizing: border-box;
 }
 
-.wrapper{
-    max-width: 1920px;
-    margin: 0 auto;
-}
+
 
 .wrapper2{
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.header{
+#header{
     background: url(./img/slider1.jpg) no-repeat top center;
-    background-size: contain;
-    width: 1920px;
-    min-height: 950px;
+    background-size: cover;
+    max-width: 1920px;
+    height: 950px;
+    margin: 0 auto;
 }
+
 
 .header-logo{
     display: flex;
+    justify-content: space-between;  
+    padding-top: 58px;
 }
 
 .logo1{
-    display: flex;
-    justify-content: space-between;  
     width: 163px;
     height: 86px;
-    margin: 0px;
-    padding: 21px 284px 0 0px;
 }
 
 .header-menu{
     display: flex;
     justify-content: space-between;   
+    align-items: center;
 }
 
 .header-menu ul{
@@ -49,12 +47,10 @@
     list-style: none;
     margin: 0;
     width: 737px; 
-    padding: 40px 0 0 0;
+
 }
 
 .header-menu ul li a{ 
-      
-
     text-decoration: none;  
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -115,6 +111,7 @@
     line-height: 52px;
 }
 
+
 .workWith{
     display: flex;
     justify-content: center;
@@ -125,25 +122,32 @@
     text-align: center;
     font-size: 40px;
     color: #fefefe;
-    padding-top: 139px;
+    padding-top: 109px;
 }
+
+
+
+
+
  
 .aboutUs{
     background: url(./img/slider3.png) no-repeat top right;
-    background-size: contain;
-    width: 1920px;
+    background-size: cover;
+    max-width: 1920px;
     min-height: 1317px;
     display: flex;
-
+    margin: 0 auto;
+    padding-top: 51px;
 }
 
 .aboutUstitle{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .aboutUstitle-text{
-    width: 548px; 
+    flex: 1 0 50%;
 }
 
 .aboutTitle{
@@ -151,7 +155,7 @@
     font-family: 'BookmanOldStyle-Bold';
     font-size: 64.1px;
     color: #36195d;
-    padding: 51px 0 41px 0;
+    padding-bottom: 41px;
 }
 
 .aboutText{
@@ -170,28 +174,31 @@
 }
 
 .imgPrice{
+    flex: 1 0 50%;
     justify-content: space-between;
-    padding: 118px 0 0 44px;
+    margin: 66px 0 0 44px;
 }
 
-.license{
-    padding-right:34px;
-}
 
 .offer-title{
     margin: 0;
     font-family: 'BookmanOldStyle-Bold';
     font-size: 64.1px;
     color: #36195d;
-    padding-bottom: 77px;
+    padding-bottom: 29px;
 }
 
 .offer-cotDes{
     display: flex;
+    height: 600px;
+    
 }
 
 .offer-cottage{
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;  
+    padding-top: 47px;
 }
 
 .cottage-text,
@@ -200,7 +207,7 @@
     font-size: 18px;
     color: #36195d;
     width: 283px;
-    padding: 0 0 108px 32px;
+
     line-height: 1.5;
 }
 
@@ -209,23 +216,24 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     border-radius: 8px;
-    max-width: 281px;
-    max-height: 64px;
+    width: 281px;
+    height: 64px;
     box-sizing: border-box;
-    font-size: 18.29px;
+    font-size: 15px;
     text-decoration: none;
     text-align: center;
     padding: 24px 55px;
     color: #ffffff;
 }
 
-.design-text{
+/*.design-text{
     padding: 100px 0 127px 32px;
-}
+}*/
 
 .offer-design{
-    flex-direction: row;
-    
+    display: flex;
+    flex-direction: column;
+    margin-left: 42px;
 }
 
 .houses{
@@ -263,7 +271,7 @@
     position: relative;
     width: 770px;
     height: 285px;
-    margin-left: 114px;
+    margin-left: 71px;
 }
 .design1{
     width: 352px;
@@ -289,34 +297,48 @@
     z-index: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .objects{
     background: url(./img/slider3.jpg) no-repeat top center;
     background-size: cover;
-    width: 1920px;
+    max-width: 1920px;
     min-height: 1476px;
     display: flex;
     margin-bottom: 61px;
+    margin: 0 auto;
 }
 
+
 .object-title{
+    width: 1170px;
     font-family: 'BookmanOldStyle-Bold';
     font-size: 57.58px;
     font-weight: bold;
     color: #36195d;
     text-align: center;
     margin: 0;
-    padding: 70px 47px;
+    padding: 70px 0;
 }
 
 .ourObjects{
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    /*align-items: stretch;*/
 }
 
 .object{
-    max-width: 382px;
-    max-height: 294px;
+    width: 382px;
+    height: 294px;
     padding-bottom: 34px;
 }
 
@@ -368,10 +390,25 @@
     color: #fcfcfd;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contacs{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
+    margin-bottom: 62px;
 }
 
 .ourContacs{
@@ -486,16 +523,34 @@
     font-weight: 600;
 }
  
+
+
+
+
+
+
 .map{
-    background: url(./img/slider6.png) no-repeat top right;
+    background: url(./img/slider6.png) no-repeat top center;
     background-size: cover;
-    width: 1920px;
-    height: 1006px;
+    max-width: 1920px;
+    min-width: 320px;
+    min-height: 1006px;
+    margin: 0 auto;
 }
+
+
+
+
+
+
+
+
 
 
 .footer{
     background: #36195d;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .footer-main{
@@ -547,7 +602,3 @@
     background-color: #ffffff;
 }
 
-#objects,
-#about{
-    transition-duration: 13s;
-}

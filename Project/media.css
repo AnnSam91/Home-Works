@@ -1,0 +1,81 @@
+@media (min-width:320px) and (max-width:728px){
+    .wrapper2{
+        max-width: calc(768px - 40%);
+    }
+
+    .header-logo{
+        padding-top: calc(58px - 5%);
+    }
+
+    .header-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-button{
+        font-size: 14px;
+    }
+
+    .project{
+        font-size: 20px;
+    }
+
+    .aboutTitle,
+    .offer-title,
+    .object-title,
+    .ourContacs{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .aboutUstitle{
+        flex-direction: column;
+    }
+
+    .imgPrice{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 20px 0;
+    }
+
+    
+    .offer-cottage{
+        margin-bottom: 20px;
+    }
+
+    .design{
+        margin-left: 0;
+    }
+
+    .house1,
+    .house2,
+    .house3,
+    .design1,
+    .design2,
+    .design3{
+        opacity: 0;
+    }
+
+    .object-title{
+       width: 513.06px;
+    }
+    .ourObjects{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ourContacs{
+        padding-bottom: 57px;
+    }
+    
+    .contacs{
+        flex-direction: column-reverse;
+    }
+
+
+
+    .footer-main{
+        flex-direction: column;
+    }
+}
+
