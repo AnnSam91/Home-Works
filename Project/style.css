@@ -16,10 +16,9 @@
 }
 
 #header{
-    background: url(./img/slider1.jpg) no-repeat top center;
+    background: url(./img/slider1-2.jpg) no-repeat top center;
     background-size: cover;
     max-width: 1920px;
-    height: 950px;
     margin: 0 auto;
 }
 
@@ -27,7 +26,7 @@
 .header-logo{
     display: flex;
     justify-content: space-between;  
-    padding-top: 58px;
+    padding-top: 37px;
 }
 
 .logo1{
@@ -66,7 +65,7 @@
     font-size: 90px;
     letter-spacing: 3px;
     margin: 0;
-    padding: 102px 139px 0 0;
+    padding: 164px 139px 0 0;
     color: #fefeff;
 }
 
@@ -74,7 +73,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 60px;
-    padding: 25px 123px 100px 0;
+    padding: 25px 112px 100px 0;
     text-align: right;
     color: #ffffff;
 }
@@ -84,7 +83,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    
+    padding-bottom: 90px;
 }
 
 .header-button{
@@ -122,19 +121,26 @@
     text-align: center;
     font-size: 40px;
     color: #fefefe;
-    padding-top: 109px;
 }
 
+.wrapper{
+    width: 1920px;
+    background: rgb(109,109,119);
+    background: linear-gradient(0deg, rgba(109,109,119,0.12667769744616597) 0%, rgba(132,131,134,1) 100%);
+}
+
+.grad{
+    padding: 56px 0 64px 0;
+}
 
 
 
 
  
 .aboutUs{
-    background: url(./img/slider3.png) no-repeat top right;
+    background: url(./img/slider4.jpg) no-repeat top right;
     background-size: cover;
     max-width: 1920px;
-    min-height: 1317px;
     display: flex;
     margin: 0 auto;
     padding-top: 51px;
@@ -180,6 +186,12 @@
 }
 
 
+
+.offer{
+    display: flex;
+    flex-direction: column;
+}
+
 .offer-title{
     margin: 0;
     font-family: 'BookmanOldStyle-Bold';
@@ -188,17 +200,19 @@
     padding-bottom: 29px;
 }
 
-.offer-cotDes{
+.offer-cotmain,
+.offer-desmain{
     display: flex;
-    height: 600px;
-    
+    flex-direction: row;
+    flex: 1 0 50%;
 }
 
-.offer-cottage{
+.offer-cottage,
+.offer-design{
     display: flex;
     flex-direction: column;  
-    justify-content: space-between;  
-    padding-top: 47px;
+    justify-content: space-around;  
+    padding-right: 40px;
 }
 
 .cottage-text,
@@ -224,16 +238,6 @@
     text-align: center;
     padding: 24px 55px;
     color: #ffffff;
-}
-
-/*.design-text{
-    padding: 100px 0 127px 32px;
-}*/
-
-.offer-design{
-    display: flex;
-    flex-direction: column;
-    margin-left: 42px;
 }
 
 .houses{
@@ -312,7 +316,6 @@
     background: url(./img/slider3.jpg) no-repeat top center;
     background-size: cover;
     max-width: 1920px;
-    min-height: 1476px;
     display: flex;
     margin-bottom: 61px;
     margin: 0 auto;
@@ -333,7 +336,6 @@
 .ourObjects{
     display: flex;
     justify-content: space-between;
-    /*align-items: stretch;*/
 }
 
 .object{
@@ -530,7 +532,7 @@
 
 
 .map{
-    background: url(./img/slider6.png) no-repeat top center;
+    background: url(./img/slider6.jpg) no-repeat top center;
     background-size: cover;
     max-width: 1920px;
     min-width: 320px;

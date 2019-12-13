@@ -38,18 +38,29 @@
     }
 
     
-    .offer-cottage{
-        margin-bottom: 20px;
+    .offer-cottage,
+    .offer-design{
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
     }
-
+    .offer-cotmain,
+    .offer-desmain{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+}
     .design{
         margin-left: 0;
     }
 
-    .house1,
+    .houses,
+    .design{
+        margin-left: 70px;
+    }
+
     .house2,
     .house3,
-    .design1,
     .design2,
     .design3{
         opacity: 0;
